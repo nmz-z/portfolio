@@ -26,23 +26,21 @@ export function VMainHeader() {
             delay:25
           }}
           onInit={ (typewriter) => {
-            typewriter.typeString("")
-              .pauseFor(1500)
+            typewriter.pauseFor(1500)
               .typeString("Un desarrollador de Javascript")
-              .pauseFor(2000)
+              .pauseFor(1500)
               .changeDeleteSpeed(20)
               .deleteChars(10)
               .typeString("Typescript")
-              .pauseFor(2000)
+              .pauseFor(1500)
               .deleteChars(10)
               .typeString("React")
-              .pauseFor(2000)
+              .pauseFor(1500)
               .deleteChars(8)
               .typeString("Front End =)")
               .start()
           }}
           />
-          <Typewriter />
       </h2>
     </div>
   )
