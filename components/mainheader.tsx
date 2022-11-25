@@ -8,15 +8,42 @@ export function VMainHeader() {
     <div className={styles.aboutInfo}>
       <h1 className={styles.header}>
         <Typewriter
-          options={{
-            delay:50
-          }}
-          onInit={(typewriter) =>{
-            typewriter.typeString("Comming soon...")
-            .start()
+          options={
+            {
+              delay:50,
+              cursor: "."
+            }
+          }
+          onInit={ (typewriter) =>{
+            typewriter.typeString("Hola, soy Diego")
+              .start()
           }}/>
-        <br/>
       </h1>
+      <h2>
+        <Typewriter
+        options={
+          {
+            delay:25
+          }}
+          onInit={ (typewriter) => {
+            typewriter.typeString("")
+              .pauseFor(1500)
+              .typeString("Un desarrollador de Javascript")
+              .pauseFor(2000)
+              .changeDeleteSpeed(20)
+              .deleteChars(10)
+              .typeString("Typescript")
+              .pauseFor(2000)
+              .deleteChars(10)
+              .typeString("React")
+              .pauseFor(2000)
+              .deleteChars(8)
+              .typeString("Front End =)")
+              .start()
+          }}
+          />
+          <Typewriter />
+      </h2>
     </div>
   )
 }

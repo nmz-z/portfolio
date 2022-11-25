@@ -20,7 +20,19 @@ export function Navigation() {
     <header>
       <nav className={styles.menubar}>
         <a className={styles.menubar_title} href="/">
-          <div className={styles.menubar_initials_container}>{"<D.R />"}</div>
+          <div className={styles.menubar_initials_container}>
+          <Typewriter
+          options={{
+            delay:120,
+            cursor: ""
+          }}
+          onInit={(typewriter) =>{
+            typewriter.typeString("<")
+            typewriter.typeString("D.R ")
+            typewriter.typeString("/>")
+              .start()
+          }}/>
+          </div>
           <h3 className={styles.menubar_name}>
           <Typewriter
           options={{
@@ -28,7 +40,7 @@ export function Navigation() {
           }}
           onInit={(typewriter) =>{
             typewriter.typeString("Diego Ramirez")
-            .start()
+              .start()
           }}/>
           </h3>
         </a>
