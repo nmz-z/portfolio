@@ -1,0 +1,95 @@
+.linksList {
+  display: flex;
+  color: #fffdd0;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-weight: bold;
+}
+
+.linksList a:hover {
+  color: #6c2ed1;
+}
+
+.menubar {
+  background-color: #181818;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
+  height: 85px;
+  max-width: 100%;
+  padding: 20px 30px;
+}
+
+.menubar_title {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.menubar_initials_container {
+  align-self: center;
+  background-color: #6c2ed1;
+  color: #d19a66;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  font-weight: bold;
+  height: 60px;
+  justify-content: center;
+  min-height: 60px;
+  min-width: 60px;
+  width: 70px;
+  text-align: center;
+  transition: all 0.5s ease-out;
+}
+
+.menubar_initials_container:hover {
+  background-color: #d19a66 ;
+  color: #6c2ed1;
+  transition: all 0.5s ease-in;
+}
+
+.menubar_name {
+  color: d19a66;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  margin-right: auto;
+  font-size: x-large;
+}
+
+.labelsParent :last-child{
+  display: none;
+}
+
+.labelsParent:hover :last-child {
+  display: inline;
+}
+
+.labelsParent:hover :first-child {
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .menubar {
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    height: auto;
+  }
+
+  .menubar_title {
+    margin: auto;
+  }
+
+  .menubar_name {
+    display: none !important;
+  }
+}
