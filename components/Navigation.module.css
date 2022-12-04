@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   gap: 16px;
   font-weight: bold;
+  padding: 0; /*Padding agregado para centrar la navbar en el celular*/
 }
 
 .linksList a:hover {
@@ -13,6 +14,10 @@
 
 .menubar {
   background-color: #181818;
+  /*STICKY NAVBAR*/
+  position: fixed;
+  width: 100%;
+  /**/
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -43,7 +48,7 @@
   justify-content: center;
   min-height: 60px;
   min-width: 60px;
-  width: 70px;
+  width: 80px;
   text-align: center;
   transition: all 0.5s ease-out;
 }
@@ -77,8 +82,12 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .menubar {
+      /*STICKY NAVBAR*/
+    position: static;
+    width: auto;
+    /**/
     align-items: center;
     flex-direction: column;
     gap: 5px;

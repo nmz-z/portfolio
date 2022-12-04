@@ -3,7 +3,7 @@ body {
   padding: 0;
   height: 100vh;
   margin: 0;
-  font-family: "Consolas", "Courier bold", "monospace bold";
+  font-family: "Consolas", "Lucida Sans Typewriter", "Courier New";
 }
 
 a {
@@ -20,7 +20,7 @@ h1 {
 
 h2 {
   color: #d19a66;
-  font-size: 21px;
+  font-size: 25px;
 }
 
 b {
@@ -34,7 +34,6 @@ b {
 body {
   margin: 0 auto;
 }
-
 
 @media (prefers-color-scheme: dark) {
   html {
