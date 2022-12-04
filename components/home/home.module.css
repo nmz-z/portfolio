@@ -24,14 +24,43 @@
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
-  margin: 40px;
+  margin: 120px;
   min-height: 70vh;
 }
 .homeContainer .content .intro .introduction .profilePicture {
+  padding-top: 0;
   animation: slideIn 7s;
-  border-radius: 10%;
+  border-radius: 50%;
   overflow: hidden;
-  width: 400px;
+}
+
+.arrowScroll {
+  position: relative;
+}
+
+.arrowScroll::before {
+  animation: bounce 2s ease infinite;
+  bottom: 2rem;
+  color: #ffffff;
+  content: "a";
+  font-size: 2rem;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+}
+
+
+.homeContainer .content .intro .introduction .technologies {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 @keyframes slideIn {
   0% {
@@ -43,24 +72,15 @@
 }
 .homeContainer .content .intro .swipeDownIcon {
   align-self: center;
-  animation: pulse linear 3s infinite;
-  color: #D5D5D5;
+  align-items: center;
+  animation: bounce 2s ease infinite;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  min-height: 30px;
-  text-align: center;
   width: 100px;
 }
-@keyframes pulse {
-  0% {
-    opacity: 0;
-  }
+@keyframes bounce {
   50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
+    transform: translateY(-50%);
   }
 }
 .homeContainer .content .workHistory, .homeContainer .content .personalProjects {

@@ -1,0 +1,87 @@
+.technologiesIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 90vw;
+  margin: 10px;
+  padding: 40px;
+}
+.technologiesIconsRow {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.adobephotoshopLogo:hover {
+  fill: #31A8FF;
+  transition: 0.5s;
+}
+
+.bootstrapLogo:hover {
+  fill: #7952B3;
+  transition: 0.5s;
+}
+
+.cssLogo:hover {
+  fill: #1572B6;
+  transition: 0.5s;
+}
+
+.gitLogo:hover {
+  fill: #F05032;
+  transition: 0.5s;
+}
+
+.htmlLogo:hover {
+  fill: #E34F26;
+  transition: 0.5s;
+}
+
+.javascriptLogo:hover {
+  fill: #F7DF1E;
+  transition: 0.5s;
+}
+
+.nextJsLogo {
+  border-radius: 100%;
+}
+
+.nextJsLogo:hover {
+  fill: #000000;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.nodeJsLogo:hover {
+  fill: #68a063;
+  transition: 0.5s;
+}
+
+.npmLogo:hover {
+  fill: #CB3837;
+  transition: 0.5s;
+}
+
+.reactLogo:hover {
+  fill: #61DAFB;
+  transition: 0.5s;
+}
+
+.typescriptLogo:hover {
+  fill: #3178C6;
+  transition: 0.5s;
+}
+
+.wordpressLogo:hover {
+  fill: #21759B;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 1000px) {
+  .technologiesIconsRow {
+    flex-wrap: wrap;
+ }
+}

@@ -27,11 +27,12 @@ export function VMainHeader() {
           }}
           onInit={ (typewriter) => {
             typewriter.pauseFor(1500)
-              .typeString("Un desarrollador de Javascript")
+              .typeString("Un desarrollador de JavaScript")
               .pauseFor(1500)
               .changeDeleteSpeed(20)
               .deleteChars(10)
-              .typeString("Typescript")
+              .changeDelay(50)
+              .typeString("TypeScript")
               .pauseFor(1500)
               .deleteChars(10)
               .typeString("React")
