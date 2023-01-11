@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Consolas";
+  src: url("Consolas.woff") format("woff");
+}
+
 html,
 body {
   padding: 0;
