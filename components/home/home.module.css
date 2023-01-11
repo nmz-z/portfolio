@@ -2,35 +2,26 @@
   display: flex;
   background-color: #000000;
   opacity: 1;
-  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 12px ), repeating-linear-gradient( #1A1A1A55, #1A1A1A );
+  background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #000000 12px ), repeating-linear-gradient( #1A1A1A55, #1A1A1A );
   flex-direction: column;
   max-width: 100vw;
 }
-.homeContainer .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.homeContainer .content .intro {
-  min-height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.homeContainer .content .intro .introduction {
+
+.introduction {
   align-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
-  margin: 120px;
+  margin: 120px 120px 50px;
   min-height: 70vh;
 }
-.homeContainer .content .intro .introduction .profilePicture {
+.profilePicture {
   padding-top: 0;
   animation: slideIn 7s;
-  border-radius: 50%;
+  border: 5px solid #6c2ed1;
+  border-radius: 100%;
   overflow: hidden;
 }
 
@@ -55,8 +46,7 @@
   width: 6rem;
 }
 
-
-.homeContainer .content .intro .introduction .technologies {
+.technologies {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -70,63 +60,44 @@
     opacity: 1;
   }
 }
-.homeContainer .content .intro .swipeDownIcon {
+.swipeDownIcon {
+  display: flex;
   align-self: center;
   align-items: center;
   animation: bounce 2s ease infinite;
-  display: flex;
   justify-content: center;
-  width: 100px;
+  width: 100%;
 }
 @keyframes bounce {
   50% {
     transform: translateY(-50%);
   }
 }
-.homeContainer .content .workHistory, .homeContainer .content .personalProjects {
-  height: 70vh;
+.personalProjects {
   max-width: 100vw;
-  min-height: 600px;
+  margin-bottom: 100px;
+  min-height: 500px;
   overflow: hidden;
   position: relative;
 }
-.homeContainer .content .workHistory .workHistoryBackground, .homeContainer .content .personalProjects .personalProjectsBackground {
-  height: 140vw;
-  margin-left: -150vw;
-  position: absolute;
-  transform-origin: 50% 0;
-  transform: rotate(18deg);
-  width: 300vw;
-}
-.homeContainer .content .workHistory {
-  background-color: #1A1A1A;
-}
-.homeContainer .content .workHistory .workHistoryBackground {
-  background-color: #202020;
-}
-.homeContainer .content .personalProjects {
-  background-color: #202020;
-}
-.homeContainer .content .personalProjects .personalProjectsBackground {
-  background-color: #1A1A1A;
-}
-.homeContainer .content .linkBox {
+
+.linkBox {
   left: 50%;
   min-width: 300px;
   position: absolute;
   text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: 3;
 }
-.homeContainer .content .linkBoxTitle {
+
+.linkBoxTitle {
   font-size: 60px;
 }
-.homeContainer .content .linkBoxTextContent {
+.linkBoxTextContent {
   max-width: 500px;
   margin-bottom: 50px;
 }
-.homeContainer .content .linkBoxButton {
+.linkBoxButton {
   border: 3px solid #D5D5D5;
   color: #D5D5D5;
   display: flex;
@@ -136,35 +107,16 @@
   padding: 15px 20px;
   text-decoration: none;
 }
-.homeContainer .content .linkBoxButton:hover {
+.linkBoxButton:hover {
   animation: onHover 0.5s;
   background-color: #E76161;
   border: 3px solid #E76161;
   color: #D5D5D5;
   cursor: pointer;
 }
-@keyframes onHover {
-  0% {
-    background-color: #1A1A1A;
-    border: 3px solid #181818;
-    color: #D5D5D5;
-  }
-  100% {
-    background-color: #E76161;
-    border: 3px solid #E76161;
-    color: #D5D5D5;
-  }
-}
-.homeContainer .content .technologiesAndTools {
-  align-items: center;
-  background-color: #202020;
-  display: flex;
-  flex-direction: column;
-  min-height: 400px;
-  text-align: center;
-}
-@media only screen and (max-width: 1000px) {
-  .homeContainer .content .workHistory .workHistoryBackground, .homeContainer .content .personalProjects .personalProjectsBackground {
-    height: 160vw !important;
+
+@media only screen and (max-width:1000px) {
+  .linkBoxTextContent{
+    font-size: 20px;
   }
 }

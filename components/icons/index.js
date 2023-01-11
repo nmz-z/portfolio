@@ -10,3 +10,6 @@ export { default as NpmLogo } from './NpmLogo'
 export { default as ReactJsLogo } from './ReactJsLogo'
 export { default as TypeScriptLogo } from './TypeScriptLogo'
 export { default as WordPressLogo } from './WordPressLogo'
+
+export { default as GithubLogo } from './GithubLogo'
+export { default as GoToWebsiteLogo } from './GoToWebsiteLogo'

@@ -7,10 +7,7 @@ import Typewriter from "typewriter-effect"
 const redirections = [{
   label: 'Home',
   route: '/'
-}, {
-  label: 'About me',
-  route: './about'
-}, {
+},{
   label: 'Projects',
   route: './projects'
 }]// Al agregar mas paginas, actualizar este array
@@ -33,7 +30,7 @@ export function Navigation() {
               .start()
           }}/>
           </div>
-          <h3 className={styles.menubar_name}>
+          <h2 className={styles.menubar_name}>
           <Typewriter
           options={{
             delay:50
@@ -42,7 +39,7 @@ export function Navigation() {
             typewriter.typeString("Diego Ramirez")
               .start()
           }}/>
-          </h3>
+          </h2>
         </a>
         <ul className={styles.linksList}>
           {redirections.map(({ label, route }) => (
@@ -55,6 +52,6 @@ export function Navigation() {
           ))}
         </ul>
       </nav>
-  </header>
+    </header>
   )
 }
