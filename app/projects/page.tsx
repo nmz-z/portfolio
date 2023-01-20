@@ -29,11 +29,11 @@ export default function ProjectsPage(){
                 alt='My portfolio screenshot'
                 href='./'
                 github={
-                <a href="https://github.com/nmz-z/portfolio">
+                <a href="https://github.com/nmz-z/portfolio" target="_blank">
                   <GithubLogo className={styles.logo} width={40}/>
                 </a>}
                 goToWebsite={
-                  <a href='https://github.com/nmz-z/portfolio'>
+                  <a href='./'>
                     <GoToWebsiteLogo className={styles.logo} width={40}/>
                   </a>}
                 />
@@ -45,7 +45,7 @@ export default function ProjectsPage(){
                 alt='Badfairy.cl'
                 href='https://badfairy.cl/'
                 goToWebsite={
-                  <a href='https://badfairy.cl/'>
+                  <a href='https://badfairy.cl/' target="_blank">
                     <GoToWebsiteLogo className={styles.logo} width={40}/>
                   </a>}
                 />
@@ -57,12 +57,12 @@ export default function ProjectsPage(){
                 alt={'Bingo Vanilla Javascript'}
                 href='https://nmz-z.github.io/bingo-vanilla-javascript/'
                 github={
-                  <a href="https://github.com/nmz-z/bingo-vanilla-javascript">
+                  <a href="https://github.com/nmz-z/bingo-vanilla-javascript" target="_blank">
                     <GithubLogo className={styles.logo} width={40}/>
                   </a>
                 }
                 goToWebsite={
-                  <a href='https://nmz-z.github.io/bingo-vanilla-javascript/'>
+                  <a href='https://nmz-z.github.io/bingo-vanilla-javascript/' target="_blank">
                     <GoToWebsiteLogo className={styles.logo} width={40}/>
                   </a>
                 }

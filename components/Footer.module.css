@@ -1,0 +1,22 @@
+.footer{
+  background-color: #181818;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+.footerIcons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  max-width: 100vw;
+  padding: 40px;
+  min-width: 300px;
+}
+.githubLogo:hover, .mailLogo:hover, .cvIcon:hover{
+  fill: #3f3f3f;
+}
+.linkedinLogo:hover{
+  fill: #0A66C2;
+}
