@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import { ToolsAndTech } from "./toolsandtech"
-import mypic from './Diego.jpg'
+import mypic from './mypic.jpg'
 import DoubleArrowIcon from "./DoubleArrowIcon"
 import Image from "next/image"
 import { VMainHeader } from "../mainheader"
@@ -15,12 +15,11 @@ export default function VHome(){
       <div className={styles.introduction}>
         <VMainHeader/>
         <div className={styles.technologies}>
-          <div className={styles.profilePictureContainer}>
-          <Image className={styles.profilePicture}
+          <div className={styles.profilePicture}>
+          <Image className={styles.pepe}
               src={mypic}
               alt="Picture of me"
-              width={200}
-              height={200}
+              width={300}
               priority
             />
             </div>

@@ -22,8 +22,14 @@
   animation: slideIn 7s;
   border: 5px solid #6c2ed1;
   border-radius: 100%;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
 }
+.pepe{
+  margin-left: -60px;
+}
+
 
 .arrowScroll {
   position: relative;

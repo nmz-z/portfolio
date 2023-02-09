@@ -6,7 +6,7 @@ export default function RootLayout({ children }: {
   children: React.ReactNode
 }) {
   return (
-    <html>
+    <html lang="es">
       <head>
         <title>Diego Ramirez</title>
         <meta name="theme-color" content="black"/>

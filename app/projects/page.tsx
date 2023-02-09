@@ -9,7 +9,8 @@ import {
 import {
   PortfolioPhoto,
   BadfairyPhoto,
-  BingoPhoto } from '../../components/projects/images/index'
+  BingoPhoto,
+  ApiRedPhoto } from '../../components/projects/images/index'
 
 export default function ProjectsPage(){
   return(
@@ -29,13 +30,31 @@ export default function ProjectsPage(){
                 alt='My portfolio screenshot'
                 href='./'
                 github={
-                <a href="https://github.com/nmz-z/portfolio" target="_blank">
+                <a aria-label='portfolio Github' href="https://github.com/nmz-z/portfolio" target="_blank">
                   <GithubLogo className={styles.logo} width={40}/>
                 </a>}
                 goToWebsite={
-                  <a href='./'>
+                  <a aria-label='Portfolio' href='./'>
                     <GoToWebsiteLogo className={styles.logo} width={40}/>
                   </a>}
+                />
+
+              <Card
+                title='API Paraderos'
+                description='Aplicación web para saber en cuanto llega la micro, para esto consumí la api de RED y decidí hacerlo con Next.js y Bootstrap 5, porque las actuales páginas con este propósito estaban hechas con tecnologías antiguas'
+                src={ApiRedPhoto}
+                alt={'API Paraderos RED'}
+                href='https://main.d5rtxffesuhjz.amplifyapp.com'
+                github={
+                  <a aria-label='API Paraderos RED Github' href='https://github.com/nmz-z/api-red' target="_blank">
+                    <GithubLogo className={styles.logo} width={40}/>
+                  </a>
+                }
+                goToWebsite={
+                  <a aria-label='API Paraderos RED' href='https://main.d5rtxffesuhjz.amplifyapp.com' target="_blank">
+                    <GoToWebsiteLogo className={styles.logo} width={40}/>
+                  </a>
+                }
                 />
 
               <Card
@@ -45,7 +64,7 @@ export default function ProjectsPage(){
                 alt='Badfairy.cl'
                 href='https://badfairy.cl/'
                 goToWebsite={
-                  <a href='https://badfairy.cl/' target="_blank">
+                  <a aria-label='Badfairy.cl' href='https://badfairy.cl/' target="_blank">
                     <GoToWebsiteLogo className={styles.logo} width={40}/>
                   </a>}
                 />
@@ -57,12 +76,12 @@ export default function ProjectsPage(){
                 alt={'Bingo Vanilla Javascript'}
                 href='https://nmz-z.github.io/bingo-vanilla-javascript/'
                 github={
-                  <a href="https://github.com/nmz-z/bingo-vanilla-javascript" target="_blank">
+                  <a aria-label='Bingo vanilla JS Github' href="https://github.com/nmz-z/bingo-vanilla-javascript" target="_blank">
                     <GithubLogo className={styles.logo} width={40}/>
                   </a>
                 }
                 goToWebsite={
-                  <a href='https://nmz-z.github.io/bingo-vanilla-javascript/' target="_blank">
+                  <a aria-label='Bingo vanilla JS' href='https://nmz-z.github.io/bingo-vanilla-javascript/' target="_blank">
                     <GoToWebsiteLogo className={styles.logo} width={40}/>
                   </a>
                 }
