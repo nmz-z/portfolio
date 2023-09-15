@@ -44,14 +44,14 @@ export default function ProjectsPage(){
                 description='Aplicación web para saber en cuanto llega la micro, para esto consumí la api de RED y decidí hacerlo con Next.js y Bootstrap 5, porque las actuales páginas con este propósito estaban hechas con tecnologías antiguas'
                 src={ApiRedPhoto}
                 alt={'API Paraderos RED'}
-                href='https://main.d5rtxffesuhjz.amplifyapp.com'
+                href='https://paraderored.vercel.app'
                 github={
                   <a aria-label='API Paraderos RED Github' href='https://github.com/nmz-z/api-red' target="_blank">
                     <GithubLogo className={styles.logo} width={40}/>
                   </a>
                 }
                 goToWebsite={
-                  <a aria-label='API Paraderos RED' href='https://main.d5rtxffesuhjz.amplifyapp.com' target="_blank">
+                  <a aria-label='API Paraderos RED' href='https://paraderored.vercel.app' target="_blank">
                     <GoToWebsiteLogo className={styles.logo} width={40}/>
                   </a>
                 }
