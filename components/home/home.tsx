@@ -16,7 +16,7 @@ export default function VHome(){
         <VMainHeader/>
         <div className={styles.technologies}>
           <div className={styles.profilePicture}>
-          <Image className={styles.pepe}
+          <Image className={styles.pic}
               src={mypic}
               alt="Picture of me"
               width={300}

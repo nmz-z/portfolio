@@ -17,6 +17,7 @@
   margin: 120px 120px 50px;
   min-height: 70vh;
 }
+
 .profilePicture {
   padding-top: 0;
   animation: slideIn 7s;
@@ -26,7 +27,8 @@
   height: 200px;
   overflow: hidden;
 }
-.pepe{
+
+.pic{
   margin-left: -60px;
 }
 

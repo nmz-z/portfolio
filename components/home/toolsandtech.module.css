@@ -100,3 +100,9 @@
     text-shadow: none;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .toolsAndTechTitle {
+    height: 85px;
+  }
+}
