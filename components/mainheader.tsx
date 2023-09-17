@@ -19,7 +19,7 @@ export function VMainHeader() {
               .start()
           }}/>
       </h1>
-      <h2>
+      <h2 className={styles.skillsRoll}>
         <Typewriter
         options={
           {
