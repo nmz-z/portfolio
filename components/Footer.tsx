@@ -16,11 +16,11 @@ export function Footer(){
       <a aria-label='Send me a mail' href="mailto:idiegoo.ra@gmail.com">
         <MailLogo className={styles.mailLogo} width={50} fill="#f8f8f8"/>
       </a>
-      <a aria-label='CV' href="https://drive.google.com/file/d/18fJnoLBE3SABz7gSbn1pHVChi5dwPa35/view?usp=sharing" target="_blank">
+      <a aria-label='CV' href="https://drive.google.com/file/d/1SDpHt3kae9_91N9ouLbFUMDcjXsIB6Fl/view?usp=sharing" target="_blank">
         <CvIcon className={styles.cvIcon} width={50} fill="#f8f8f8"/>
       </a>
     </div>
-    ©2023 Diego Ramirez
+    ©{new Date().getFullYear()} Diego Ramirez
     </footer>
   )
 }
