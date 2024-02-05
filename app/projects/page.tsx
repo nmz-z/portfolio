@@ -25,7 +25,7 @@ export default function ProjectsPage(){
               <ul className={styles.cards}>
               <Card
                 title='this.portfolio'
-                description='Este es mi proyecto actual, hecho con React, estilizado con CSS Modules y toda la potencia del nuevo NextJS 13. Revisa mi código en GitHub!'
+                description='Este es mi proyecto actual, hecho con React, estilizado con CSS Modules y toda la potencia del nuevo NextJS 14. Revisa mi código en GitHub!'
                 src={PortfolioPhoto}
                 alt='My portfolio screenshot'
                 href='./'
@@ -62,7 +62,6 @@ export default function ProjectsPage(){
                 description='Mi primer eCommerce hecho con WordPress y su plugin WooCommerce, en este proyecto aprendí también sobre phpMyAdmin, cPanel, SMTP, etc'
                 src={BadfairyPhoto}
                 alt='Badfairy.cl'
-                href='https://badfairy.cl/'
                 />
 
               <Card
