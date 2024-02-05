@@ -91,6 +91,21 @@
   transition: 0.5s;
 }
 
+.nestJsLogo:hover {
+  fill: #E0234E;
+  transition: 0.5s;
+}
+
+.tailwindCSSLogo:hover {
+  fill: #06B6D4;
+  transition: 0.5s;
+}
+
+.postgreSQLLogo:hover {
+  fill: #4169E1;
+  transition: 0.5s;
+}
+
 @media only screen and (max-width: 1000px) {
   .technologiesIconsRow {
     flex-wrap: wrap;

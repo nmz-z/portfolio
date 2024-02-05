@@ -13,7 +13,10 @@ import {
   ReactJsLogo,
   TypeScriptLogo,
   WordPressLogo,
-  MySqlLogo
+  MySqlLogo,
+  NestJsLogo,
+  TailwindCSSLogo,
+  PostgreSQLLogo
 } from '../icons/index'
 import styles from './toolsandtech.module.css'
 
@@ -62,6 +65,11 @@ export function ToolsAndTech() {
           <NodeJsLogo className={styles.nodeJsLogo} width={50} onMouseEnter={() => showText(9)} onMouseLeave={hideText}/>
           <WordPressLogo className={styles.wordpressLogo} width={50} onMouseEnter={() => showText(10)} onMouseLeave={hideText}/>
           <AdobephotoshopLogo className={styles.adobephotoshopLogo} width={50} onMouseEnter={() => showText(11)} onMouseLeave={hideText}/>
+        </div>
+        <div id='toolsandtech-row-2' className={styles.technologiesIconsRow}>
+          <NestJsLogo className={styles.nestJsLogo} width={50} onMouseEnter={() => showText(12)} onMouseLeave={hideText}/>
+          <TailwindCSSLogo className={styles.tailwindCSSLogo} width={50} onMouseEnter={() => showText(13)} onMouseLeave={hideText}/>
+          <PostgreSQLLogo className={styles.postgreSQLLogo} width={50} onMouseEnter={() => showText(14)} onMouseLeave={hideText}/>
         </div>
       </Fade>
     </div>

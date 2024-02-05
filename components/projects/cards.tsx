@@ -7,7 +7,7 @@ type DataCard = {
   title: string;
   description: string;
   src: any;
-  href: string;
+  href?: string;
   alt?: string;
   github?: React.ReactElement;
   goToWebsite?: React.ReactElement;
