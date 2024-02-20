@@ -21,6 +21,7 @@ export default function VHome(){
               alt="Picture of me"
               width={300}
               priority
+              quality={85}
             />
             </div>
           <ToolsAndTech/>

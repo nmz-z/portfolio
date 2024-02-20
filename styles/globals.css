@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Consolas";
   src: url("Consolas.woff") format("woff");
+  font-display: swap;
 }
 
 html,
@@ -44,6 +45,7 @@ body {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
